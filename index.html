@@ -1,17 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
 
+
+    <!-- GOOGLE-FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- STAYLESHEETS -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/stayles.css">
 </head>
 <body>
+    <div class="container">
+        <form class="ticket-form" action="https://echo.htmlacademy.ru" method="POST">
+            <header class="movie-info">
+                <div class="movie-info__title-wrapper">
+                    <h1 class="movie-info__title">League of Justice</h1>
+                    <span class="movie-info__badge">Real 3D</span>
+                    <span class="movie-info__badge">12+</span>
+                </div>
 
+                <p class="movie-info__cinema-name">Sunshine Cinema</p>
+                <time class="movie-info__time" datetime="2022.04.18 19:00">Tonight, 7PM</time>
+                <button class="ticket-form__close" type="button">
+                    <span class="visually-hidden">Close ticket form</span>
+                </button>
+            </header>
+
+            <hr class="divider">
+
+            <section class="cinema">
+                <h2 class="visually-hidden">Cinema seats list</h2>
+                <div class="cinema-screen">
+                    <img class="cinema__poster" src="./img/kino.jpg" alt="TENET movie poster" width="1360" height="680" srcset="./img/kino.jpg 1x, ./img/kino@2x.jpg 2x">
+                </div>
+
+                <div class="cinema__seats">
+                    <ol class="cinema__seats-list">
+                        <li class="cinema__seat">
+                            <label class="seat vis">
+                                <input class="seats-checkbox visually-hidden" type="checkbox" name="row_1_seat_1">
+                            <span class="seats__control">
+                                <span class="seat__number">1</span>
+                            </span>
+                            </label>
+                        </li>
+                        <li class="cinema__seat">
+                            <label class="seat seat--vip vis">
+                                <input class="seats-checkbox visually-hidden" type="checkbox" name="row_1_seat_1">
+                            <span class="seats__control">
+                                <span class="seat__number">2</span>
+                            </span>
+                            </label>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </form>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
